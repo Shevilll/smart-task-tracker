@@ -149,9 +149,7 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    # Add your frontend deployment URLs here
-    # "https://your-frontend-app.vercel.app",
-    # "https://your-frontend-app.netlify.app",
+    "https://smart-task-tracker-frontend.vercel.app",  # Your actual Vercel URL
 ]
 
 # Allow all origins in development, restrict in production
