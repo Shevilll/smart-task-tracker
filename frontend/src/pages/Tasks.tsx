@@ -46,6 +46,7 @@ interface User {
 }
 
 const Tasks: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { isAdmin, user } = useAuth();
   const [tasks, setTasks] = useState<Task[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);

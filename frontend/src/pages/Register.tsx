@@ -58,6 +58,7 @@ const Register: React.FC = () => {
     } catch (error: any) {
       if (error.response?.data) {
         const errorMessages = [];
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         for (const [field, messages] of Object.entries(error.response.data)) {
           if (Array.isArray(messages)) {
             errorMessages.push(...messages);

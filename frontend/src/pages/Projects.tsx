@@ -22,6 +22,7 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { isAdmin, user } = useAuth();
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
