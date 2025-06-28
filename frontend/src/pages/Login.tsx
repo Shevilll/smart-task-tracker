@@ -111,10 +111,10 @@ const Login: React.FC = () => {
               <strong>Admin:</strong> admin / admin123
             </p>
             <p>
-              <strong>Contributor:</strong> john_doe / john123
+              <strong>Contributor:</strong> john_doe / john123123
             </p>
             <p>
-              <strong>Contributor:</strong> jane_smith / jane123
+              <strong>Contributor:</strong> jane_smith / jane123123
             </p>
           </div>
         </div>

@@ -161,7 +161,7 @@ const Projects: React.FC = () => {
       </div>
 
       {/* Debug info for admins */}
-      {isAdmin && (
+      {/* {isAdmin && (
         <div className="bg-yellow-50 border border-yellow-200 rounded-md p-4">
           <p className="text-sm text-yellow-800">
             <strong>Debug Info:</strong> User: {user?.username} ({user?.role}) |
@@ -169,7 +169,7 @@ const Projects: React.FC = () => {
             {localStorage.getItem("access_token") ? "Present" : "Missing"}
           </p>
         </div>
-      )}
+      )} */}
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
