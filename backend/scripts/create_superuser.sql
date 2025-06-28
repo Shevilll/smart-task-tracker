@@ -1,0 +1,5 @@
+-- Create a superuser for Django admin
+-- Run this after migrations: python manage.py createsuperuser
+-- Username: admin
+-- Password: admin123
+-- Email: admin@example.com
