@@ -51,74 +51,84 @@ A comprehensive task management system built with Django REST Framework and Reac
 ### Backend Setup
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone <repository-url>
+
+   ```bash
+   git clone https://github.com/Shevilll/smart-task-tracker
    cd smart-task-tracker/backend
-   \`\`\`
+   ```
 
 2. **Create virtual environment**
-   \`\`\`bash
+
+   ```bash
    python -m venv venv
    source venv/bin/activate # On Windows: venv\Scripts\activate
-   \`\`\`
+   ```
 
 3. **Install dependencies**
-   \`\`\`bash
+
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. **Environment variables**
    Create a `.env` file in the backend directory:
-   \`\`\`env
+
+   ```env
    SECRET_KEY=your-secret-key-here
    DEBUG=True
    DATABASE_URL=sqlite:///db.sqlite3
    ADMIN_REGISTRATION_KEY=your-admin-key-here
-   \`\`\`
+   ```
 
 5. **Run migrations**
-   \`\`\`bash
+
+   ```bash
    python manage.py makemigrations
    python manage.py migrate
-   \`\`\`
+   ```
 
 6. **Create superuser**
-   \`\`\`bash
+
+   ```bash
    python manage.py createsuperuser
-   \`\`\`
+   ```
 
 7. **Load sample data**
-   \`\`\`bash
+
+   ```bash
    python scripts/populate_data.py
-   \`\`\`
+   ```
 
 8. **Start development server**
-   \`\`\`bash
+   ```bash
    python manage.py runserver
-   \`\`\`
+   ```
 
 ### Frontend Setup
 
 1. **Navigate to frontend directory**
-   \`\`\`bash
+
+   ```bash
    cd ../frontend
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Environment variables**
    Create a `.env` file in the frontend directory:
-   \`\`\`env
+
+   ```env
    REACT_APP_API_URL=http://localhost:8000/api
-   \`\`\`
+   ```
 
 4. **Start development server**
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
 ## Demo Credentials
 
@@ -129,8 +139,8 @@ A comprehensive task management system built with Django REST Framework and Reac
 
 ### Contributors
 
-- **Username**: john_doe, **Password**: john123
-- **Username**: jane_smith, **Password**: jane123
+- **Username**: john_doe, **Password**: john123123
+- **Username**: jane_smith, **Password**: jane123123
 
 ### Admin Registration
 
@@ -264,7 +274,7 @@ A comprehensive task management system built with Django REST Framework and Reac
 
 ## Project Structure
 
-\`\`\`
+```
 smart-task-tracker/
 ├── backend/
 │ ├── task_tracker/ # Django project settings
@@ -283,7 +293,7 @@ smart-task-tracker/
 │ │ └── App.tsx
 │ └── package.json
 └── README.md
-\`\`\`
+```
 
 ## Contributing
 
@@ -292,7 +302,3 @@ smart-task-tracker/
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
