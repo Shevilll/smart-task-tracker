@@ -59,10 +59,7 @@ const Projects: React.FC = () => {
 
     try {
       if (editingProject) {
-        const response = await api.put(
-          `/projects/${editingProject.id}/`,
-          formData
-        );
+        await api.put(`/projects/${editingProject.id}/`, formData);
         toast.success("Project updated successfully");
       } else {
         const response = await api.post("/projects/", formData);
