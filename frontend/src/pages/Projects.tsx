@@ -39,9 +39,7 @@ const Projects: React.FC = () => {
 
   const fetchProjects = async () => {
     try {
-      console.log("Fetching projects..."); // Debug log
       const response = await api.get("/projects/");
-      console.log("Projects response:", response.data); // Debug log
       setProjects(response.data.results || response.data);
     } catch (error) {
       console.error("Error fetching projects:", error);
@@ -59,21 +57,15 @@ const Projects: React.FC = () => {
       return;
     }
 
-    console.log("Submitting project data:", formData); // Debug log
-
     try {
       if (editingProject) {
-        console.log("Updating project:", editingProject.id); // Debug log
         const response = await api.put(
           `/projects/${editingProject.id}/`,
           formData
         );
-        console.log("Update response:", response.data); // Debug log
         toast.success("Project updated successfully");
       } else {
-        console.log("Creating new project"); // Debug log
         const response = await api.post("/projects/", formData);
-        console.log("Create response:", response.data); // Debug log
         toast.success("Project created successfully");
       }
 
@@ -114,7 +106,6 @@ const Projects: React.FC = () => {
   const handleDelete = async (id: number) => {
     if (window.confirm("Are you sure you want to delete this project?")) {
       try {
-        console.log("Deleting project:", id); // Debug log
         await api.delete(`/projects/${id}/`);
         toast.success("Project deleted successfully");
         fetchProjects();
